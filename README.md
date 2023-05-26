@@ -1,4 +1,4 @@
-# Dashboard
+# Dashboard (currently working on)
 
 Project to create a administrative dashboard. Set up the page with HTML and CSS with dummy content. The main focus on this project was to use Grid to get the page layout in position. We had creative freedom to chose the theme. I wanted this admin dashboard to match the Spooktober landing page project.
 
