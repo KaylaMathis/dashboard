@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Apple Chancery, cursive, sans-serif;
+}
+
+/* Setting up the layout */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+.sidebar {
+    background-color: orange;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.header {
+    grid-column: 2 / 5;
+    grid-row: 1;
+}
+
+.content {
+    background-color: rgb(224, 110, 68);
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+}
+
+.right {
+    background-color: rgb(172, 156, 156);
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+}
+
+/* Setting up the Dashboard section */
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 50px 400px 250px;
+    padding: 50px;
+}
+
+.dash {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.nav {
+    grid-row: 2 / 3;
+}
+
+.help {
+    grid-row: 3 / 4;
+}
+
+h3 {
+    padding: 15px;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+}
+
+.container2, .container3, .container4, .container5, .container6, .container7, .container8, .container9, .container10 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* Section for the header */
+
+.profile-pic {
+    height: 200px;
+    width: 90%;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    width: 40em;
+    height: 2em;
+    background-color:rgb(223, 222, 222)
+}
+
+b {
+    font-size: 25px;
+}
+
+button {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 80px;
+    height: 50px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+
+.search-area {
+    margin: 25px;
+    display: flex;
+
+}
+
+.notify-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic1 {
+    height: 90px;
+    width: 20%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.greetings {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 60px;
+}
+
+.welcome {
+    border: 5px solid red;
+    display: flex;
+    align-items: end;
+
+}
+
+.name {
+    border: 5px solid red;
+    grid-column: 2;
+    
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Section for content */
+/*  background-color: rgb(243, 243, 180); like this for content cards */
+
+.content {
+    background-color:rgb(223, 222, 222);
+}
+
+.cards{
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.contentSuper{
+    background-color: white;
+    padding:5px 15px;
+    border-left: 5px solid orange;
+    border-radius: 7px;
+}
+
+.contentLess {
+    background-color: white;
+    padding:5px;
+    border-left: 5px solid orange;
+    border-radius: 7px;
+}
+
+.contentImpossible {
+    background-color: white;
+    padding:5px;
+    border-left: 5px solid orange;
+    border-radius: 7px;
+}
+
+.contentEasy {
+    background-color: white;
+    padding:5px;
+    border-left: 5px solid orange;
+    border-radius: 7px;
+}
+
+.contentAd {
+    background-color: white;
+    padding:5px;
+    border-left: 5px solid orange;
+    border-radius: 7px;
+}
+
+.contentMoney {
+    background-color: white;
+    padding:5px;
+    border-left: 5px solid orange;
+    border-radius: 7px;
+}
+
+/* Section for Announcements */
+
+.right {
+    background-color: orange;
+}
