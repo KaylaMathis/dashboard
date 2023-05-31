@@ -10,7 +10,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 250px 300px 500px;
+    grid-template-rows: 200px 250px 300px auto;
 }
 
 
@@ -165,87 +165,104 @@ button {
 
 
 /* Section for content */
-/*  background-color: rgb(243, 243, 180); like this for content cards */
 
 .content {
     background-color:rgb(223, 222, 222);
-    
+    padding-top: 30px;
+}
+
+.projects {
+    padding-left: 15px;
 }
 
 .cards{
     padding: 10px;
     display: grid; 
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 250px);
     column-gap: 2em;
     row-gap: 2em;
+    margin-left: 5px;
 }
 
-.contentSuper{
-    background-color: white;
-    padding:5px;
-    border-left: 5px solid orange;
-    border-radius: 7px;
+.card-title {
+    grid-column: 1 / -1;
 }
 
-.contentLess {
-    background-color: white;
-    padding:5px;
-    border-left: 5px solid orange;
-    border-radius: 7px;
+.card-text {
+    grid-column: 1 / -1;
+    grid-row: 2;
 }
 
-.contentImpossible {
+.contentSuper, .contentLess, .contentImpossible, .contentEasy, .contentAd, .contentMoney{
     background-color: white;
-    padding:5px;
+    padding: 15px;
     border-left: 5px solid orange;
     border-radius: 7px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
 }
 
-.contentEasy {
-    background-color: white;
-    padding:5px;
-    border-left: 5px solid orange;
-    border-radius: 7px;
+.star{
+    height: 50px;
+    width: 50%;
+    grid-column: 2;
+    grid-row: -1;
+    column-gap: 2rem;
 }
 
-.contentAd {
-    background-color: white;
-    padding:5px;
-    border-left: 5px solid orange;
-    border-radius: 7px;
+.eye, .branch {
+    height: 50px;
+    width: 50%;
+    grid-column: 3;
+    grid-row: -1;
 }
 
-.contentMoney {
-    background-color: white;
-    padding:5px;
-    border-left: 5px solid orange;
-    border-radius: 7px;
+.branch {
+    height: 50px;
+    width: 50%;
+    grid-column: 4;
+    grid-row: -1;
 }
 
 /* Section for Announcements */
 
 .container20 {
     display: grid; 
-    row-gap: 1em;
+    grid-template-columns: 350px;
+    grid-template-rows: 1fr;
+    background-color:rgb(223, 222, 222);
+    padding-top: 30px;
 }
 
 hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 3px solid orange;
 }
 
 .topics {
     background-color:rgb(223, 222, 222);
+    padding: 0 15px 10px 0;
 }
 
 .announce {
     background-color: rgb(243, 243, 180);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.solid {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Section for Trending */
 
 .trend {
     background-color: rgb(243, 243, 180);
+    border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 .container-div {
@@ -253,4 +270,9 @@ hr.solid {
     justify-content: left;
     align-items: center;
     padding: 5px;
+}
+
+#pics {
+    height: auto;
+    max-width: 20%;
 }
